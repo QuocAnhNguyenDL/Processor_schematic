@@ -1,5 +1,5 @@
 EDA Netlist Writer report for quartus
-Mon Nov 11 15:33:37 2024
+Tue Nov 12 16:00:49 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Nov 11 15:33:37 2024 ;
+; EDA Netlist Writer Status ; Successful - Tue Nov 12 16:00:49 2024 ;
 ; Revision Name             ; quartus                               ;
 ; Top-level Entity Name     ; Top                                   ;
 ; Family                    ; Cyclone V                             ;
@@ -93,14 +93,14 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Mon Nov 11 15:33:36 2024
+    Info: Processing started: Tue Nov 12 16:00:48 2024
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/Project/nhan_project/simulation/qsim/ quartus -c quartus
 Info (119006): Selected device 5CEBA7F27C7 for design "quartus"
 Info (204019): Generated file quartus.vo in folder "D:/Project/nhan_project/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4627 megabytes
-    Info: Processing ended: Mon Nov 11 15:33:37 2024
+    Info: Processing ended: Tue Nov 12 16:00:49 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
