@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 264 376 280)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "start" (rect 5 0 28 12)(font "Arial" ))
+	(text "start" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -149,6 +149,35 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 440 224 560 320)
+	(text "FSM" (rect 5 0 29 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "start" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "start" (rect 21 43 46 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "Q[3..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "Q[3..0]" (rect 62 27 99 41)(font "Arial" (font_size 8)))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 80))
+	)
+)
+(symbol
 	(rect 632 224 832 352)
 	(text "logic" (rect 5 0 30 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
@@ -196,35 +225,6 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 184 112))
-	)
-)
-(symbol
-	(rect 440 224 560 320)
-	(text "FSM" (rect 5 0 29 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 27 36 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "start" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "start" (rect 21 43 46 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "Q[3..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "Q[3..0]" (rect 62 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 104 80))
 	)
 )
 (connector

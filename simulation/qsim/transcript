@@ -2,120 +2,22 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Top
+# -- Compiling module upcounter
 # 
 # Top level modules:
-# 	Top
+# 	upcounter
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Top_vlg_sample_tst
-# -- Compiling module Top_vlg_check_tst
-# -- Compiling module Top_vlg_vec_tst
+# -- Compiling module upcounter_vlg_sample_tst
+# -- Compiling module upcounter_vlg_check_tst
+# -- Compiling module upcounter_vlg_vec_tst
 # 
 # Top level modules:
-# 	Top_vlg_vec_tst
-# vsim -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.Top_vlg_vec_tst 
-# Loading work.Top_vlg_vec_tst
-# Loading work.Top
-# Loading altera_ver.dffeas
-# Loading work.Top_vlg_sample_tst
-# Loading work.Top_vlg_check_tst
-# Loading altera_ver.PRIM_GDFF_LOW
-# ERROR! Vector Mismatch for output port Q0[3] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 01001000
-# ERROR! Vector Mismatch for output port Q0[6] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 01001000
-# ERROR! Vector Mismatch for output port Q1[1] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010110
-# ERROR! Vector Mismatch for output port Q1[2] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010110
-# ERROR! Vector Mismatch for output port Q1[4] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010110
-# ERROR! Vector Mismatch for output port Q2[1] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10011110
-# ERROR! Vector Mismatch for output port Q2[2] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10011110
-# ERROR! Vector Mismatch for output port Q2[3] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10011110
-# ERROR! Vector Mismatch for output port Q2[4] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10011110
-# ERROR! Vector Mismatch for output port Q2[7] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10011110
-# ERROR! Vector Mismatch for output port Q3[0] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q3[3] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q3[4] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q3[5] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q3[6] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q3[7] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q4[0] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-# ERROR! Vector Mismatch for output port Q4[1] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-# ERROR! Vector Mismatch for output port Q4[2] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-# ERROR! Vector Mismatch for output port Q4[3] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-# ERROR! Vector Mismatch for output port Q4[7] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-# ERROR! Vector Mismatch for output port Q3[1] :: @time = 1160000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-# ERROR! Vector Mismatch for output port Q3[2] :: @time = 1160000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-# ERROR! Vector Mismatch for output port Q4[4] :: @time = 1200000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q4[5] :: @time = 1200000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q4[6] :: @time = 1200000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111001
-# ERROR! Vector Mismatch for output port Q0[1] :: @time = 1400000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010110
-# ERROR! Vector Mismatch for output port Q0[2] :: @time = 1400000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010110
-# ERROR! Vector Mismatch for output port Q0[4] :: @time = 1400000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010110
-# ERROR! Vector Mismatch for output port Q1[3] :: @time = 1440000.000 ps
-#      Expected value = 00000000
-#      Real value = 01001000
-# ERROR! Vector Mismatch for output port Q1[6] :: @time = 1440000.000 ps
-#      Expected value = 00000000
-#      Real value = 01001000
-# ERROR! Vector Mismatch for output port Q2[0] :: @time = 1880000.000 ps
-#      Expected value = 00000000
-#      Real value = 10001111
-#          32 mismatched vectors : Simulation failed !
-# ** Note: $finish    : Top.vwf.vt(952)
-#    Time: 3 us  Iteration: 0  Instance: /Top_vlg_vec_tst/tb_out
+# 	upcounter_vlg_vec_tst
+# vsim -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.upcounter_vlg_vec_tst 
+# Loading work.upcounter_vlg_vec_tst
+# Loading work.upcounter
+# Loading work.upcounter_vlg_sample_tst
+# Loading work.upcounter_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : upcounter.vwf.vt(201)
+#    Time: 1 us  Iteration: 0  Instance: /upcounter_vlg_vec_tst/tb_out

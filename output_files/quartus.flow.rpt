@@ -1,5 +1,5 @@
 Flow report for quartus
-Tue Nov 12 16:00:49 2024
+Wed Nov 13 18:08:58 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Tue Nov 12 16:00:49 2024      ;
+; Flow Status                     ; Successful - Wed Nov 13 18:08:58 2024      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; quartus                                    ;
-; Top-level Entity Name           ; Top                                        ;
+; Top-level Entity Name           ; upcounter                                  ;
 ; Family                          ; Cyclone V                                  ;
 ; Device                          ; 5CEBA7F27C7                                ;
 ; Timing Models                   ; Final                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 97                                         ;
-; Total pins                      ; 51                                         ;
+; Total registers                 ; 0                                          ;
+; Total pins                      ; 5                                          ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/12/2024 16:00:35 ;
+; Start date & time ; 11/13/2024 18:08:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; quartus             ;
 +-------------------+---------------------+
@@ -78,20 +78,20 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                    ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 136411544994074.173140203410180          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 136411544994074.173149611621920          ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                       ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; D:/Project/nhan_project/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                              ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                       ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                        ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                 ; --            ; Top         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                    ; --            ; Top         ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                   ; --            ; Top         ; Top            ;
+; PARTITION_COLOR                     ; 16764057                                 ; --            ; upcounter   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                    ; --            ; upcounter   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                   ; --            ; upcounter   ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                      ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW    ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                             ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Top                                      ; quartus       ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; upcounter                                ; quartus       ; --          ; --             ;
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
 
 
@@ -100,10 +100,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4703 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4622 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4627 MB             ; 00:00:01                           ;
-; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:00                           ;
+; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -122,7 +122,7 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off quartus -c quartus
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog quartus -c quartus --vector_source=D:/Project/nhan_project/simulation/Top.vwf --testbench_file=D:/Project/nhan_project/simulation/qsim/Top.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog quartus -c quartus --vector_source=D:/Project/nhan_project/simulation/upcounter.vwf --testbench_file=D:/Project/nhan_project/simulation/qsim/upcounter.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/Project/nhan_project/simulation/qsim/ quartus -c quartus
 
 

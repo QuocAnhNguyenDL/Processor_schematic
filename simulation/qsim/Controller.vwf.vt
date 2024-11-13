@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/11/2024 04:17:16"
+// Generated on "11/13/2024 17:22:31"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Controller
 // 
@@ -28,14 +28,16 @@
 `timescale 1 ps/ 1 ps
 module Controller_vlg_sample_tst(
 	clk,
+	start,
 	sampler_tx
 );
 input  clk;
+input  start;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(clk)
+always @(clk or start)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -562,6 +564,7 @@ module Controller_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
+reg start;
 // wires                                               
 wire [7:0] Addr_plus;
 wire [7:0] control_signal;
@@ -579,6 +582,7 @@ Controller i1 (
 	.control_signal(control_signal),
 	.RA1(RA1),
 	.RA2(RA2),
+	.start(start),
 	.WA(WA)
 );
 
@@ -586,12 +590,21 @@ Controller i1 (
 always
 begin
 	clk = 1'b0;
-	clk = #20000 1'b1;
-	#20000;
+	clk = #10000 1'b1;
+	#10000;
+end 
+
+// start
+initial
+begin
+	start = 1'b0;
+	start = #30000 1'b1;
+	start = #20000 1'b0;
 end 
 
 Controller_vlg_sample_tst tb_sample (
 	.clk(clk),
+	.start(start),
 	.sampler_tx(sampler)
 );
 
